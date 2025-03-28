@@ -1,0 +1,19 @@
+
+This time, a socket was created to connect to the real server and the target website. Standard HTTP request first line and Host header were generated. Subsequently, the webpage content is received from the origin server, and the received content is fully forwarded to the client browser. Finally, the data returned by the server is saved to the local disk.
+------------------------------------------------------------
+r4 | 99ab728 | Fri, 28 Mar 2025 20:28:22 +1030 | 1 line
+
+
+This update sends back every line of the local cache file to the client.
+------------------------------------------------------------
+r3 | b353194 | Fri, 28 Mar 2025 20:22:49 +1030 | 1 line
+
+
+The function I implemented in this part is to accept a connection from a client and receive HTTP request data sent by the client
+------------------------------------------------------------
+r2 | f50ce31 | Fri, 28 Mar 2025 20:17:05 +1030 | 1 line
+
+
+I created a TCP socket and bound it to the specified IP and port. Then start listening and allow up to 10 connections to queue.
+------------------------------------------------------------
+r1 | e1b1e7f | Fri, 28 Mar 2025 20:10:07 +1030 | 1 line
